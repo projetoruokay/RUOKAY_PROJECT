@@ -22,6 +22,9 @@ app.use('/clinica', require('./src/routes/clinica.routes'));
 app.use('/especialidade', require('./src/routes/especialidade.routes'));
 app.use('/horario', require('./src/routes/horario.routes'));
 app.use('/profissional', require('./src/routes/profissional.routes'));
+app.use('/cliente', require('./src/routes/cliente.routes'));
+app.use('/agendamento', require('./src/routes/agendamento.routes'));
+
 
 
 

@@ -1,3 +1,5 @@
 {
-    "api_key":"ak_test_UwH92ySpwtLl1r1MbqVc1v3h6pdLGo"
+    "api_key":"ak_test_UwH92ySpwtLl1r1MbqVc1v3h6pdLGo",
+    "app_fee": 99,
+    "recipient_id": "re_ckpj2h5l501wa0i9txfs1r24f"
 }

@@ -34,6 +34,9 @@ senha:{
     type: String,
     coordinates: [Number],
   },
+  
+  recipientId: String,
+
   dataCadastro: {
     type: Date,
     default: Date.now,

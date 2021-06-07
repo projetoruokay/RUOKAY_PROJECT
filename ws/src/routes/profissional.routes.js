@@ -47,21 +47,21 @@ router.post('/', async (req, res) => {
 
       // Criar o recebedor 
 
-      const pargarmeRecipient = await pagarme('/recipients', {
+      const pagarmeRecipient = await pagarme('/recipients', {
         bank_account_id: pagarmeBankAccount.data.id,
         transfer_interval: 'daily',
         transfer_enabled: true,
       });
 
       if (pagarmeBankAccount.error) {
-        throw pargarmeRecipient;
+        throw pagarmeRecipient;
       }
 
         // Criando o profissional
 
       newProfissional = await new Profissional({
         ... profissional,
-        recipientId: pargarmeRecipient.data.id,
+        recipientId: pagarmeRecipient.data.id,
       }).save({ session });
     }
 
